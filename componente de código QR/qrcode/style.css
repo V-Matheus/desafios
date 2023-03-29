@@ -1,0 +1,53 @@
+/* Resets globais */
+
+body {
+  margin: 0px;
+  background-color: hsl(212, 45%, 89%);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilo */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+}
+
+.conteudo {
+  width: 300px;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 20px;
+  border-radius: 5%;
+}
+
+.conteudo-imagem img {
+  border-radius: 5%;
+  align-items: center;
+}
+
+h1,
+span {
+  margin: 40px 0;
+}
+
+h1 {
+  font-size: 25px;
+  color: hsl(218, 44%, 22%);
+  font-family: "Outfit";
+  font-weight: 700;
+}
+
+span {
+  font-size: 15px;
+  color: hsl(220, 15%, 55%);
+  font-family: "Outfit";
+  font-weight: 400;
+}

@@ -1,0 +1,168 @@
+/* Resets globais */
+body,
+html {
+  margin: 0px;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+span,
+h1 {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Variáveis */
+:root {
+  --cor-p1: hsl(178, 100%, 50%);
+}
+
+/* Estilos */
+
+.container-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+  height: 1200px;
+  font-family: "Outfit";
+}
+
+.container {
+  align-items: center;
+  background-color: hsl(216, 50%, 16%);
+  width: 300px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 10px 20px hsl(217, 54%, 12%);
+}
+
+.container-img img,
+.container {
+  border-radius: 5%;
+}
+
+.container-img img,
+h1,
+span,
+p {
+  margin-bottom: 20px;
+}
+
+.container-img {
+  position: relative;
+  cursor: pointer;
+}
+
+.container-img:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 24px);
+  background-color: hsl(178, 100%, 50%, 0.5);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-radius: 5%;
+}
+
+.container-img::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url(../nft-preview-card-component-main/images/icon-view.svg);
+  background-size: cover;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.container-img:hover::before {
+  visibility: visible;
+}
+
+.container-img img:hover {
+  opacity: 50%;
+}
+
+.container h1 {
+  color: var(--cor-p1);
+  font-weight: 600;
+}
+
+.container p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.dados {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.dados-nft img {
+  max-width: 100%;
+}
+
+.dados-nft,
+.dados-hora {
+  text-align: center;
+}
+
+.dados-nft img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dados-nft span {
+  vertical-align: middle;
+  color: var(--cor-p1);
+  font-weight: 300;
+}
+
+.dados-hora img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dados-hora span {
+  vertical-align: middle;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.pessoal {
+  display: flex;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding-top: 20px;
+}
+
+.pessoal p {
+  font-weight: 300;
+}
+
+.pessoal a {
+  color: var(--cor-p1);
+}
+
+.pessoal img {
+  width: 30px;
+  margin-right: 20px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}

@@ -32,7 +32,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("/order-summary-component-main/images/pattern-background-desktop.svg")
+  background: url("../order-summary-component-main/images/pattern-background-desktop.svg")
     no-repeat;
   background-size: 100%;
   z-index: 1;

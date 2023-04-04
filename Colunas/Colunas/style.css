@@ -1,0 +1,154 @@
+/* Resets Globais */
+
+body,
+h1,
+p,
+a {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Estilos */
+
+h1,
+a {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+}
+
+p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+}
+
+.container-bg {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 450px;
+  width: 800px;
+  position: relative;
+}
+
+.conteudo img,
+h1,
+p,
+a {
+  padding: 20px;
+}
+
+.conteudo h1 {
+  color: hsl(0, 0%, 95%);
+}
+
+.conteudo p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.conteudo a {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 380px;
+}
+
+.coluna-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.coluna-1 a {
+  color: hsl(31, 77%, 52%);
+  position: absolute;
+  left: 55px;
+}
+
+.coluna-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.coluna-2 a {
+  color: hsl(184, 100%, 22%);
+  position: absolute;
+  left: 320px;
+}
+
+.coluna-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.coluna-3 a {
+  color: hsl(179, 100%, 13%);
+  position: absolute;
+  right: 105px;
+}
+
+.coluna-1,
+.coluna-2,
+.coluna-3 {
+  padding: 20px 40px;
+}
+
+@media (max-width: 800px) {
+
+  .container-bg {
+    height: 1200px;
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conteudo img,
+  h1,
+  p,
+  a {
+    padding: 10px;
+  }
+
+  .coluna-1 {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .coluna-1 a {
+    top: 16px;
+    left: 40px;
+  }
+
+  .coluna-2 a {
+    top: 330px;
+    left: 40px;
+  }
+
+  .coluna-3 {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .coluna-3 a {
+    top: 640px;
+    left: 40px;
+  }
+}

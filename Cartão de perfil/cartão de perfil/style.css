@@ -1,0 +1,135 @@
+/* Resets Globais */
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Estilos */
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: hsl(185, 75%, 39%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.container-bg {
+  z-index: 1;
+  position: absolute;
+  height: 100vh;
+}
+
+.container-bg-top {
+  position: relative;
+  left: -500px;
+  align-items: first baseline;
+  height: 600px;
+  width: 600px;
+  background-image: url("../profile-card-component-main/images/bg-pattern-top.svg");
+  background-position: right bottom;
+}
+
+.container-bg-bottom {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  left: 565px;
+  bottom: 310px;
+  background-image: url("../profile-card-component-main/images/bg-pattern-bottom.svg");
+  background-position: left top;
+}
+
+.conteudo {
+ z-index: 2;
+ background-color: aliceblue;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ border-radius: 10px;
+}
+
+.conteudo img:first-child{
+  border-radius: 10px 10px 0 0 ;
+}
+
+.conteudo h1, span {
+  margin-bottom: 20px;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.perfil h1 {
+  font-family: "Kumbh Sans";
+  font-weight: 700;
+  margin-top: 50px;
+  position: relative;
+}
+
+.perfil span {
+  font-family: "Kumbh Sans";
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.perfil h1::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: url("../profile-card-component-main/images/image-victor.jpg") no-repeat;
+  position: absolute;
+  top: -100px;
+  right: 70px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.dados {
+  border-top: 1px solid hsl(0, 0%,80%);
+  padding: 30px;
+  gap: 50px;
+  display: flex;
+  font-family: "Kumbh Sans";
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.dados-seguidores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dados-likes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dados-fotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dados span {
+  font: 400;
+  color: hsl(227, 10%, 46%);
+  font-size: 10px;
+}
